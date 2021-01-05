@@ -20,9 +20,33 @@
   <style>
   html,body        {height:100%;margin:0;padding:0;overflow:hidden;}
 iframe .ratio {display:block;width:100%;height:auto;}
-iframe {position:absolute;top:0;left:0;width:100%; height:100%;}
+iframe {position:absolute;top:0;left:0;width:100%; height:100%;border:0;}
+	  
+	  .fadeIn {
+		  max-width:900px;margin:0 auto;
+animation-name: fadeInAnime;/*1で解説*/
+animation-fill-mode:backwards;/*2で解説*/
+animation-duration:3s;/*3で解説*/
+animation-iteration-count:1;/*4で解説*/
+animation-timing-function:ease;/*5で解説*/
+animation-delay: 0.5s;/*6で解説*/
+animation-direction:normal;/*7で解説*/
+}
+
+/*1で解説*/
+@keyframes fadeInAnime{
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
   </style>
-<div style="max-width:900px;margin:0 auto;">
+	
+	
+<div class="fadein">
 				
 <h1>Embed Google Map</h1>
 <h2>Embed Google Maps to your Website with a Google Map Iframe</h2>
